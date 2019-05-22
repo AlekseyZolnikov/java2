@@ -15,6 +15,10 @@ public class Main {
         Wall wall = new Wall(300);
         Track track = new Track(300);
 
+        Object[] unit = new Object[]{
+                new Cat(250,500)
+        };
+
         cat.jump(wall);
         cat.run(track);
 
