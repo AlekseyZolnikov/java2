@@ -10,7 +10,7 @@ public class Wall implements Obstacle {
     }
 
     @Override
-    public int getLenght() {
+    public int getLength() {
         return 0;
     }
 

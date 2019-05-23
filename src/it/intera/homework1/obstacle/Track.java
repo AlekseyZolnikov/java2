@@ -10,7 +10,7 @@ public class Track implements Obstacle {
     }
 
     @Override
-    public int getLenght() {
+    public int getLength() {
         return lenght;
     }
 

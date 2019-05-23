@@ -22,7 +22,7 @@ public class Human implements Unit {
 
     @Override
     public boolean run(Track track) {
-        return track.getLenght() < maxLength;
+        return track.getLength() < maxLength;
     }
 
     @Override
