@@ -1,17 +1,15 @@
-package it.intera.homework1.interference;
-
-import it.intera.homework1.obstacle.Obstacle;
+package it.intera.homework1.obstacle;
 
 public class Track implements Obstacle {
-    private int lenght;
+    private int length;
 
-    public Track(int lenght) {
-        this.lenght = lenght;
+    public Track(int length) {
+        this.length = length;
     }
 
     @Override
     public int getLength() {
-        return lenght;
+        return length;
     }
 
     @Override

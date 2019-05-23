@@ -1,7 +1,7 @@
 package it.intera.homework1;
 
-import it.intera.homework1.interference.Track;
-import it.intera.homework1.interference.Wall;
+import it.intera.homework1.obstacle.Track;
+import it.intera.homework1.obstacle.Wall;
 import it.intera.homework1.unit.Unit;
 
 public class Team {
@@ -10,7 +10,6 @@ public class Team {
     private Course course;
     Team(Unit[] units) {
         this.units = units;
-
     }
 
     public void doIt(Course course) {
@@ -30,7 +29,6 @@ public class Team {
                 }
             }
         }
-
     }
 
     public void showResult() {

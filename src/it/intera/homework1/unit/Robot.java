@@ -1,7 +1,7 @@
 package it.intera.homework1.unit;
 
-import it.intera.homework1.interference.Track;
-import it.intera.homework1.interference.Wall;
+import it.intera.homework1.obstacle.Track;
+import it.intera.homework1.obstacle.Wall;
 
 public class Robot implements Unit {
 

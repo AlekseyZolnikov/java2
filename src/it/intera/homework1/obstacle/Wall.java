@@ -1,6 +1,4 @@
-package it.intera.homework1.interference;
-
-import it.intera.homework1.obstacle.Obstacle;
+package it.intera.homework1.obstacle;
 
 public class Wall implements Obstacle {
     private int height;

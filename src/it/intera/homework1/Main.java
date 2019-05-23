@@ -1,7 +1,7 @@
 package it.intera.homework1;
 
-import it.intera.homework1.interference.Track;
-import it.intera.homework1.interference.Wall;
+import it.intera.homework1.obstacle.Track;
+import it.intera.homework1.obstacle.Wall;
 import it.intera.homework1.obstacle.Obstacle;
 import it.intera.homework1.unit.*;
 
