@@ -1,9 +1,10 @@
 package it.intera.homework1.interference;
 
-public class Track {
+public class Track extends Interference{
     private int lenght;
 
-    public Track(int lenght) {
+    public Track(String name, int lenght) {
+        super(name);
         this.lenght = lenght;
     }
 

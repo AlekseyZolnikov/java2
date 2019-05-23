@@ -20,23 +20,13 @@ public class Unit implements Ability{
     }
 
     @Override
-    public void run(Track track) {
-        System.out.println(getName() + " бежит");
-        if (track.getLenght() >= maxLength) {
-            System.out.println(getName() + " не смог пробежать");
-        }else {
-            System.out.println(getName() + " пробежал");
-        }
+    public boolean run(Track track) {
+        return track.getLenght() < maxLength;
     }
 
     @Override
-    public void jump(Wall wall) {
-        System.out.println(getName() + " прыгает");
-        if (wall.getHeight() >= maxHeight) {
-            System.out.println(getName() + " не смог перепрыгнуть");
-        }else {
-            System.out.println(getName() + " перепрыгнул");
-        }
+    public boolean jump(Wall wall) {
+        return wall.getHeight() < maxHeight;
 
     }
 }
