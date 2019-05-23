@@ -3,10 +3,7 @@ package it.intera.homework1;
 import it.intera.homework1.interference.Interference;
 import it.intera.homework1.interference.Track;
 import it.intera.homework1.interference.Wall;
-import it.intera.homework1.unit.Cat;
-import it.intera.homework1.unit.Human;
-import it.intera.homework1.unit.Robot;
-import it.intera.homework1.unit.Unit;
+import it.intera.homework1.unit.*;
 
 public class Main {
     public static void main(String[] args) {
