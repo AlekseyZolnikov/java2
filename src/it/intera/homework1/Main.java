@@ -1,8 +1,8 @@
 package it.intera.homework1;
 
-import it.intera.homework1.interference.Interference;
 import it.intera.homework1.interference.Track;
 import it.intera.homework1.interference.Wall;
+import it.intera.homework1.obstacle.Obstacle;
 import it.intera.homework1.unit.*;
 
 public class Main {
@@ -11,8 +11,8 @@ public class Main {
         Human human = new Human("Вася",500,10);
         Robot robot = new Robot("Я есть грут", 1000, 200);
 
-        Wall wall = new Wall("Стена",300);
-        Track track = new Track("Беговая дорожка", 300);
+        Wall wall = new Wall(300);
+        Track track = new Track(300);
 
         cat.jump(wall);
         cat.run(track);
@@ -34,14 +34,14 @@ public class Main {
             new Robot("Валли", 5000, 100),
         };
 
-        Interference[] interferences = new Interference[]{
-            new Wall("Стена",100),
-            new Track("Беговая дорожка", 1000),
-            new Track("Беговая дорожка", 1500),
-            new Wall("Стена",300)
+        Obstacle[] obstacles = new Obstacle[]{
+            new Wall(100),
+            new Track( 1000),
+            new Track( 1500),
+            new Wall(300)
         };
 
-        Course course = new Course(interferences);
+        Course course = new Course(obstacles);
         Team team = new Team(units);
 
         team.doIt(course);

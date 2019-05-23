@@ -1,14 +1,14 @@
 package it.intera.homework1;
 
-import it.intera.homework1.interference.Interference;
+import it.intera.homework1.obstacle.Obstacle;
 
 public class Course {
-    private Interference[] interferences;
-    public Course(Interference[] interferences) {
-        this.interferences = interferences;
+    private Obstacle[] obstacles;
+    public Course(Obstacle[] obstacles) {
+        this.obstacles = obstacles;
     }
 
-    public Interference[] getInterferences() {
-        return interferences;
+    public Obstacle[] getInterferences() {
+        return obstacles;
     }
 }
