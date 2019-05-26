@@ -34,6 +34,8 @@ public class Main {
             }
         }catch(MyArraySizeException se) {
             System.out.println(se.getMessage());
+        }catch (MyArrayDataException de) {
+            System.out.println(de.getMessage());
         }
     }
 
