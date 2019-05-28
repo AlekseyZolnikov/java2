@@ -6,15 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
         String[][] strs = new String[][]{
-            {"1","2","b","4"},
-            {"1","2","b","4"},
-            {"1","3","4","4"},
+            {"1","2","3","4"},
+            {"1","2","3","4"},
             {"1","2","3","4"},
         };
 
         convertToInt(strs);
 
-        System.out.println("Результат до исключения = " + sum);
+
 
     }
 
@@ -23,7 +22,7 @@ public class Main {
         try {
             if (strs.length != 4) throw new MyArraySizeException();
             for (int i = 0; i < strs.length; i++) {
-                if (strs[i].length != 4) throw new MyArraySizeException(i);
+                if (strs[i].length != 4) throw new MyArraySizeException();
                 for (int j = 0; j < strs[i].length; j++) {
                     if (isInteger(strs[i][j])) {
                         sum = sum + Integer.valueOf(strs[i][j]);
@@ -32,11 +31,14 @@ public class Main {
                     }
                 }
             }
-        }catch(MyArraySizeException se) {
-            System.out.println(se.getMessage());
-        }catch (MyArrayDataException de) {
-            System.out.println(de.getMessage());
+
+            System.out.println("Результат до исключения = " + sum);
+
+        }catch(MyArraySizeException | MyArrayDataException e) {
+            System.out.println(e.getMessage());
         }
+
+
     }
 
     private static boolean isInteger(String s) {
