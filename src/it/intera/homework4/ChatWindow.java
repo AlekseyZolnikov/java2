@@ -40,8 +40,8 @@ public class ChatWindow extends JFrame {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String message = textArea.getText()+textField.getText()+"\n";
-                textArea.setText(message);
+                String message = textField.getText()+"\n";
+                textArea.append(message);
                 textField.setText(null);
             }
         });
@@ -55,8 +55,8 @@ public class ChatWindow extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    String message = textArea.getText()+textField.getText()+"\n";
-                    textArea.setText(message);
+                    String message = textField.getText()+"\n";
+                    textArea.append(message);
                     textField.setText(null);
                 }
             }
